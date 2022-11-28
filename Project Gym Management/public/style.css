@@ -1,0 +1,88 @@
+body {
+    font-family: 'Mukta', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(44 212 212);
+}
+
+.box1 {
+    font-size: large;
+    padding-right: 1.2rem !important;
+}
+
+.box1:hover {
+    color: rgb(44 212 212) !important;
+}
+
+.box2 {
+    font-size: xx-large;
+    margin-right: 4rem !important;
+}
+
+.btn {
+    line-height: 2.5 !important;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: .1rem 1rem;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+}
+
+.btn-sign {
+    padding: .1rem .6rem;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    color: white;
+}
+
+
+
+.bg-image {
+    background: url('/images/1.jpg');
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.form-label {
+    margin-bottom: .3rem;
+}
+
+.cont {
+    padding-top: 1.3%;
+    padding-left: 6.8%;
+}
+
+.register {
+    padding: 0rem .75rem;
+}
+
+.reg-head {
+    text-align: center;
+}
+.boxing {
+    /* border: 2px solid black; */
+    background-color: 	#f5f5ef;
+}
+.img-modf {
+    /* margin-top: 80px; */
+    border-radius: 8px ;
+    height: 300px;
+    width: 550px;
+}
+.boxing1 {
+    /* border: 2px solid black; */
+    margin-top: 80px;
+}
+.master {
+    font-size: 55px;
+}
+.f-color {
+    color: rgb(44 212 212);
+}
+

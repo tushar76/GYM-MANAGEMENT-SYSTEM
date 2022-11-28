@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet Plan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    /* NAVBAR CSS */
+    body {
+      font-family: 'Mukta', sans-serif;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
+      color: rgb(44 212 212);
+    }
+
+    .box1 {
+      font-size: large;
+      padding-right: 1.2rem !important;
+    }
+
+    .box1:hover {
+      color: rgb(44 212 212) !important;
+    }
+
+    .box2 {
+      font-size: xx-large;
+      margin-right: 4rem !important;
+    }
+
+    .btn {
+      line-height: 2.5 !important;
+    }
+
+    .btn-group-sm>.btn,
+    .btn-sm {
+      padding: .1rem 1rem;
+      font-size: 1.1rem;
+      border-radius: .5rem;
+    }
+
+    .btn-sign {
+      padding: .1rem .6rem;
+      font-size: 1.1rem;
+      border-radius: .5rem;
+      color: white;
+    }
+
+    /* 2ND STEP */
+    #dp {
+      display: flex;
+      justify-content: center;
+      height: 100px;
+      padding: 30px;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    /* 3RD STEP */
+    .fatl {
+      /* text-align: center; */
+      color: rgb(44 212 212);
+      /* outline: 2px solid grey; */
+    }
+
+    /* FOOTER */
+    .footer {
+      height: 70px;
+      background-color: rgb(44 212 212);
+    }
+
+    .footer p {
+      line-height: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand box2 brand" href="#">FITNESSCLUB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  box1" href="/index">HOME</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active box1 box1" aria-current="page" href="/diet">DIET</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link box1 box1" href="/clients">CLIENTS</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link box1" href="/workout">WORKOUT SCHEDULE</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link box1" href="/contactus">CONTACT US</a>
+          </li>
+        </ul>
+        <!-- <button type="button" class="btn btn-secondary btn-sm me-2">GET STARTED</button> -->
+        <!-- <button type="button" class="btn btn-info btn-sign">SIGN IN</button> -->
+      </div>
+    </div>
+  </nav>
+  <!--  2ND STEP  -->
+  <div id="dp">
+    GET A FREE DIET PLAN HERE
+  </div>
+  <!-- 3RD STEP -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 fatl">
+        <h1 class="fs-2 fw-bold reg-head text-center">
+          FAT LOSS DIET PLAN
+        </h1>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col ">Timing</th>
+              <th scope="col">Diet Chart</th>
+              <!-- <th scope="col">Last</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">09:30 AM</th>
+              <td>Mix Fruit</td>
+            </tr>
+            <tr>
+              <th scope="row">10:00 AM</th>
+              <td>Oats</td>
+            </tr>
+            <tr>
+              <th scope="row">11:00 AM</th>
+              <td>1 liv 52 ds</td>
+            </tr>
+            <tr>
+              <th scope="row">12:00 AM</th>
+              <td>4 Egg White</td>
+            </tr>
+            <tr>
+              <th scope="row">01:00 PM</th>
+              <td>Lunch : Dal Chawal and 300g Boiled Chicken</td>
+            </tr>
+            <tr>
+              <th scope="row">04:00 PM</th>
+              <td>Carrot and Cucumber</td>
+            </tr>
+            <tr>
+              <th scope="row">05:00 PM</th>
+              <td>Bread and Peanut Butter</td>
+            </tr>
+            <tr>
+              <th scope="row">06:00 PM</th>
+              <td>Black Coffee</td>
+            </tr>
+            <tr>
+              <th scope="row">07:00 PM</th>
+              <td>After Exercise : Egg white and Mix Fruit</td>
+            </tr>
+            <tr>
+              <th scope="row">09:00 PM</th>
+              <td>Dinner : 2 Chapati, Rice dal, salad and 2 Liv 52 ds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6 fatl">
+        <h1 class="fs-2 fw-bold reg-head text-center">
+          GAINING DIET PLAN
+        </h1>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col ">Timing</th>
+              <th scope="col">Diet Chart</th>
+              <!-- <th scope="col">Last</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">9:30 AM</th>
+              <td>Mix Fruit</td>
+            </tr>
+            <tr>
+              <th scope="row">10:00 AM</th>
+              <td>Oats</td>
+            </tr>
+            <tr>
+              <th scope="row">11:00 AM</th>
+              <td>Banana Shake and 1 liv 52 ds</td>
+            </tr>
+            <tr>
+              <th scope="row">12:00 AM</th>
+              <td>4 Egg White</td>
+            </tr>
+            <tr>
+              <th scope="row">1:00 PM</th>
+              <td>Lunch : Dal Chawal and 300g Boiled Chicken</td>
+            </tr>
+            <tr>
+              <th scope="row">4:00 PM</th>
+              <td>100 g : Sweet Patato, Potato and Curd</td>
+            </tr>
+            <tr>
+              <th scope="row">5:00 PM</th>
+              <td>Bread and Peanut Butter</td>
+            </tr>
+            <tr>
+              <th scope="row">6:00 PM</th>
+              <td>Banana Shake</td>
+            </tr>
+            <tr>
+              <th scope="row">7:00 PM</th>
+              <td>After Exercise : Egg white and Mix Fruit</td>
+            </tr>
+            <tr>
+              <th scope="row">9:00 PM</th>
+              <td>Dinner : 2 Chapati, Rice dal, salad and 2 Liv 52 ds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="conatiner-fliud footer">
+    <p class="text-center fs-4 fw-bold">| Copyright © 2022 fitnessclub.com | All right reserved</p>
+  </div>
+</body>
+
+</html>

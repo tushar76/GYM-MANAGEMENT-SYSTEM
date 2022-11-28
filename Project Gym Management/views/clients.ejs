@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLIENTS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+
+  <style>
+    /* NAVBAR CSS */
+    body {
+      font-family: 'Mukta', sans-serif;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
+      color: rgb(44 212 212);
+    }
+
+    .box1 {
+      font-size: large;
+      padding-right: 1.2rem !important;
+    }
+
+    .box1:hover {
+      color: rgb(44 212 212) !important;
+    }
+
+    .box2 {
+      font-size: xx-large;
+      margin-right: 4rem !important;
+    }
+
+    .btn {
+      line-height: 2.5 !important;
+    }
+
+    .btn-group-sm>.btn,
+    .btn-sm {
+      padding: .1rem 1rem;
+      font-size: 1.1rem;
+      border-radius: .5rem;
+    }
+
+    .btn-sign {
+      padding: .1rem .6rem;
+      font-size: 1.1rem;
+      border-radius: .5rem;
+      color: white;
+    }
+
+    /* FOOTER */
+    .footer {
+      height: 70px;
+      background-color: rgb(44 212 212);
+    }
+
+    .footer p {
+      line-height: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand box2 brand" href="#">FITNESSCLUB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link box1" href="/index">HOME</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link box1 box1" href="/diet">DIET</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active box1 box1" aria-current="page" href="/clients">CLIENTS</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link box1" href="/workout">WORKOUT SCHEDULE</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link box1" href="/contactus">CONTACT US</a>
+          </li>
+        </ul>
+        <!-- <button type="button" class="btn btn-secondary btn-sm me-2">GET STARTED</button> -->
+        <!-- <button type="button" class="btn btn-info btn-sign">SIGN IN</button> -->
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- 2ND STEP -->
+  <div class="container-fluid text-center mt-4 bolder fw-bold">
+    <h1>CLIENTS INFORMATION</h1>
+  </div>
+
+  <!-- 3RD STEP - FORM  -->
+
+  <div class="container mt-5">
+
+
+    <form class="row g-3" action="/client" method="post" id="form">
+      <div class="col-md-4">
+        <label for="validationServer01" class="form-label">NAME</label>
+        <input type="text" class="form-control" name = "username" id="validationServer01" required>
+        <!-- <div class="valid-feedback">
+            Looks good!
+          </div> -->
+      </div>
+      <div class="col-md-4">
+        <label for="validationServer02" class="form-label">PHONE NO</label>
+        <input type="number" class="form-control" name = "phone" id="validationServer02" required>
+        <!-- <div class="valid-feedback">
+            Looks good!
+          </div> -->
+      </div>
+      <div class="col-md-4">
+        <label for="validationServerUsername" class="form-label">EMAIL</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+          <input type="email" class="form-control" name = "email" id="validationServerUsername"
+            aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+          <!-- <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Please choose a username.
+            </div> -->
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">ADDRESS</label>
+        <input type="text" class="form-control" name = "address" id="inputAddress">
+      </div>
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">CITY</label>
+        <input type="text" class="form-control" name = "city" id="validationServer03" aria-describedby="validationServer03Feedback"
+          required>
+        <!-- <div id="validationServer03Feedback" class="invalid-feedback">
+            Please provide a valid city.
+          </div> -->
+      </div>
+      
+      <div class="col-md-3">
+        <label for="validationServer05" class="form-label">ZIP</label>
+        <input type="text" class="form-control " name = "zip"id="validationServer05" aria-describedby="validationServer05Feedback"
+          required>
+        <!-- <div id="validationServer05Feedback" class="invalid-feedback">
+            Please provide a valid zip.
+          </div> -->
+      </div>
+      <div class="col-md-3 mt-4">
+        <h6>GENDER</h6>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">MALE</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">FEMALE</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">ADD CLIENT</button>
+      </div>
+
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit"> <a href="/cinfo" style="text-decoration: none;color:white">CLIENT INFO</a></button>
+      </div>
+    </form>
+  </div>
+
+  <!-- SCRIPT VALUE  -->
+  <!-- <div class="container mt-4 d_main"> -->
+  <!-- <p>Name: <span id="display_name"></span></p>
+        <p>Phone No : <span id="display_email"></span></p> -->
+  <!-- </div> -->
+
+  <!-- <script>
+
+        function addCilent(event)
+        {
+            let temp;
+            let c_name  = document.getElementById('validationServer01').value;
+            let c_pno = document.getElementById('validationServer02').value;
+            
+            // d_name.innerHTML = c_name;
+            // d_pno.innerHTML = c_pno;
+            d_main.innerHTML = `<p>Name: <span>${c_name}</span></p><br>
+                                <p>Name: <span">${c_pno}</span></p>`
+            event.preventDefault();
+        }
+
+    </script> -->
+
+  <!-- FOOTER -->
+  <div class="conatiner-fliud footer mt-3">
+    <p class="text-center fs-4 fw-bold">| Copyright © 2022 fitnessclub.com | All right reserved</p>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- tab -->
+</body>
+
+</html>

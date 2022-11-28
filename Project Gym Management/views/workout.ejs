@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKOUT SCHEDULE</title>
+    <link rel="stylesheet" href="../static/index.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <style>
+        /* NAVBAR CSS */
+        body {
+            font-family: 'Mukta', sans-serif;
+        }
+
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: rgb(44 212 212);
+        }
+
+        .box1 {
+            font-size: large;
+            padding-right: 1.2rem !important;
+        }
+
+        .box1:hover {
+            color: rgb(44 212 212) !important;
+        }
+
+        .box2 {
+            font-size: xx-large;
+            margin-right: 4rem !important;
+        }
+
+        .btn {
+            line-height: 2.5 !important;
+        }
+
+        .btn-group-sm>.btn,
+        .btn-sm {
+            padding: .1rem 1rem;
+            font-size: 1.1rem;
+            border-radius: .5rem;
+        }
+
+        .btn-sign {
+            padding: .1rem .6rem;
+            font-size: 1.1rem;
+            border-radius: .5rem;
+            color: white;
+        }
+
+        /* 2ND STEP */
+        #dp {
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            padding: 30px;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        /* 3RD STEP */
+        .bg-image {
+            /* background: url('/images/1.jpg'); */
+            height: 450px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        /* FOOTER */
+        .footer {
+            height: 70px;
+            background-color: rgb(44 212 212);
+        }
+
+        .footer p {
+            line-height: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand box2 brand" href="#">FITNESSCLUB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  box1" href="/index">HOME</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link box1 box1" aria-current="page" href="/diet">DIET</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link box1 box1" href="/clients">CLIENTS</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link box1 active" aria-current="page" href="/workout">WORKOUT SCHEDULE</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link box1" href="/contactus">CONTACT US</a>
+                    </li>
+                </ul>
+                <!-- <button type="button" class="btn btn-secondary btn-sm me-2">GET STARTED</button> -->
+                <!-- <button type="button" class="btn btn-info btn-sign">SIGN IN</button> -->
+            </div>
+        </div>
+    </nav>
+    <!-- 2ND STEP -->
+    <div id="dp">
+        BEST WORKOUT SCHEDULE
+    </div>
+
+    <!-- 3RD STEP -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/static/images/3.jpg" alt="Error" class="bg-image img-fluid float-end img-modf">
+                <!-- <button type="button" class="btn btn-primary mt-3">WORKOUT FOR MEN</button> -->
+                <button id="myButton1" type="button" class="btn btn-dark mt-4"> <a href="/workoutmen" style="text-decoration: none;color:white">WORKOUT FOR MEN</a></button>
+            </div>
+            <div class="col-md-6">
+                <img src="/static/images/15.webp" alt="Error" class="bg-image img-fluid float-end img-modf">
+                <!-- <button type="button" class="btn btn-primary mt-3">WORKOUT FOR WOMEN</button> -->
+                <button id="myButton2" type="button" class="btn btn-dark mt-4"> <a href="/workoutwomen"style="text-decoration: none;color:white">WORKOUT FOR WOMEN</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/static/images/5.jpg" alt="Error" class="bg-image img-fluid float-end img-modf">
+                <!-- <button type="button" class="btn btn-primary mt-3">WORKOUT FOR MEN</button> -->
+                <button id="myButton3" type="button" class="btn btn-dark mt-3"> <a href="/musclebuilding" style="text-decoration: none;color:white">MUSCLE BUILDING</a></button>
+            </div>
+            <div class="col-md-6">
+                <img src="/static/images/2.jpg" alt="Error" class="bg-image img-fluid float-end img-modf">
+                <!-- <button type="button" class="btn btn-primary mt-3">WORKOUT FOR WOMEN</button> -->
+                <button id="myButton4" type="button" class="btn btn-dark mt-3"> <a href="/fullbody" style="text-decoration: none;color:white">FULL BODY</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="conatiner-fliud footer mt-3">
+        <p class="text-center fs-4 fw-bold">| Copyright © 2022 fitnessclub.com | All right reserved</p>
+    </div>
+
+    <!-- JAVASCRITP -->
+</body>
+
+</html>
